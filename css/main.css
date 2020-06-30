@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(0, 102, 140, 0.2);
+}
+
+.velha-board {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+}
+.velha-board.winner::before, .velha-board.velha::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 30px);
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 42px;
+  font-weight: bold;
+}
+.velha-board.winner.player1::before {
+  color: #333;
+  background: rgba(255, 241, 56, 0.8);
+}
+.velha-board.winner.player2::before {
+  color: #333;
+  background: rgba(0, 255, 255, 0.8);
+}
+.velha-board.velha::before {
+  color: #fff;
+  background: rgba(255, 63, 63, 0.7);
+}
+
+.stats {
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  background: #333;
+  font-weight: bold;
+}
+.stats span#player1 {
+  color: #fff138;
+}
+.stats span#player2 {
+  color: aqua;
+}
+
+.row ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row ul li.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #999;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  background: #777;
+}
+.row ul li.item.iconX {
+  color: #fff138;
+}
+.row ul li.item.iconO {
+  color: cyan;
+}
+
+.row:first-child ul li:first-child {
+  border-radius: 10px 0 0;
+}
+.row:first-child ul li:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.row:last-child ul li:first-child {
+  border-radius: 0 0 0 10px;
+}
+.row:last-child ul li:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 5px 30px;
+  border: 3px solid #333;
+  color: #fff;
+  background-color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+button:hover {
+  border-color: #333;
+  color: #333;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=main.css.map */
