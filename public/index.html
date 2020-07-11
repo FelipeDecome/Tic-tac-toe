@@ -19,6 +19,17 @@
             <button id="reset">Reset</button>
         </div>
 
-        <script type="module" src="js/main.js"></script>
+        <script type="module">
+            import currentInstance from "./js/app/controller/Game.js";
+
+            const game = currentInstance();
+
+            document
+                .querySelector("#reset")
+                .addEventListener("click", (event) => {
+                    event.preventDefault();
+                    game.reset();
+                });
+        </script>
     </body>
 </html>

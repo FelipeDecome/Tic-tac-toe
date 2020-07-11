@@ -2,11 +2,11 @@
     "name": "tic_tac_toe",
     "version": "0.0.1",
     "description": "A tic tac toe game built with Javascript",
-    "main": "dist/app.js",
+    "main": "dist/server.js",
     "scripts": {
-        "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+        "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules server.ts",
         "build": "tsc",
-        "start": "node dist/app.js"
+        "start": "node dist/server.js"
     },
     "author": "Felipe Decome",
     "license": "ISC",

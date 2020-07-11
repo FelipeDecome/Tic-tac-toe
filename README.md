@@ -1,2 +1,7 @@
 # Tic-tac-toe
- A Tic tac toe built with Javascript 
+
+A Tic tac toe built with Javascript
+
+```console
+    npm start
+```

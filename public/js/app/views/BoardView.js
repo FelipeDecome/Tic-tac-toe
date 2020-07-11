@@ -1,5 +1,5 @@
-import createClickHandler from "./../helpers/ClickHandler.js";
-import { getCurrentPlayerMarker } from "./../models/Players.js";
+import createClickHandler from "../helpers/ClickHandler.js";
+import { getCurrentPlayerMarker } from "../models/Players.js";
 
 export default function createBoardView(element) {
     const htmlElement = element;
